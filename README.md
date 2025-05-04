@@ -56,6 +56,7 @@ Local Kubernetes Cluster (Minikube or kind)
 
 Project Structure
 
+```
 project-directory/
 ├── app.py
 ├── requirements.txt
@@ -64,7 +65,7 @@ project-directory/
 ├── prometheus-cm.yaml
 ├── prometheus-deploy.yaml
 ├── grafana-deploy.yaml
-
+```
 Screenshot Gallery
 -
 📸 📌 Screenshot Placeholder: Flask App running locally
@@ -92,7 +93,7 @@ Detailed Project Sections
 What
 -
 Write a simple app.py with /hello and /metrics endpoints.
-
+```
 from flask import Flask, request
 from prometheus_client import Counter, generate_latest
 
@@ -111,7 +112,7 @@ def metrics():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
-
+```
 Why
 -
 Flask is lightweight and great for building simple APIs, common in internal tooling.
@@ -130,7 +131,7 @@ Take Screenshot Here: Flask app running locally at http://localhost:5000/hello
 # 2. Dockerize the Application
 
 Create a Dockerfile to containerize the app.
-
+```
 FROM python:3.9-slim
 WORKDIR /app
 COPY requirements.txt ./
@@ -138,12 +139,12 @@ RUN pip install -r requirements.txt
 COPY app.py .
 EXPOSE 5000
 CMD ["python", "app.py"]
-
+```
 Build and run:
-
+```
 docker build -t myflaskapp:1.0 .
 docker run -d -p 5000:5000 myflaskapp:1.0
-
+```
 Why
 -
 Containers allow consistent deployment across environments.
@@ -166,7 +167,7 @@ Troubleshooting Tip: If the container fails, use docker logs <container-id>.
 What
 -
 Write a deployment.yaml manifest.
-
+```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -198,7 +199,7 @@ spec:
   - port: 80
     targetPort: 5000
   type: NodePort
-
+```
 Deploy:
 
 kubectl apply -f deployment.yaml
@@ -222,7 +223,7 @@ Troubleshooting Tip: Use kubectl describe pod <pod-name> for pod errors.
 # 4. Set Up Prometheus Monitoring
 
 Write Prometheus config:
-
+```
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -240,7 +241,7 @@ Deploy Prometheus:
 
 kubectl apply -f prometheus-cm.yaml
 kubectl apply -f prometheus-deploy.yaml
-
+```
 Why
 -
 Prometheus collects time-series metrics crucial for diagnosing performance issues.
