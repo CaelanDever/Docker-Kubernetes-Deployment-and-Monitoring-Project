@@ -69,21 +69,27 @@ project-directory/
 Screenshot Gallery
 -
 📸 📌 Screenshot Placeholder: Flask App running locally
+--
 <img width="450" alt="pyapp" src="https://github.com/user-attachments/assets/e9892445-831f-4da1-acac-b65a2dc20ff8" />
+
 <img width="302" alt="dockerapp" src="https://github.com/user-attachments/assets/85e50e68-85e8-4e7a-b047-d5c0e39fe7e1" />
 
-
 📸 📌 Screenshot Placeholder: Docker container running
+--
 <img width="450" alt="docker" src="https://github.com/user-attachments/assets/7f398e63-fa9e-4a75-904f-8739f5e03af3" />
+
 <img width="302" alt="dockerapp" src="https://github.com/user-attachments/assets/b0015587-2164-466a-8d04-5e46bf0f5d6c" />
 
 📸 📌 Screenshot Placeholder: Kubernetes pods and services
+--
 <img width="453" alt="getpods" src="https://github.com/user-attachments/assets/6b94f654-b621-4554-abc2-3bd164a03d1c" />
 
 📸 📌 Screenshot Placeholder: Prometheus Target UP view
+--
 <img width="474" alt="prom" src="https://github.com/user-attachments/assets/11a7cb22-711f-4533-a1c0-fc11ab550a09" />
 
 📸 📌 Screenshot Placeholder: Grafana Dashboard 
+--
 <img width="480" alt="grafana" src="https://github.com/user-attachments/assets/47181233-c41b-4c3f-a20a-6819b0b2901f" />
 
 Detailed Project Sections
@@ -156,6 +162,7 @@ Containerization is a must-know skill for any modern IT professional.
 Learning Moment: Layered Docker images, best practices (like using slim base images).
 
 Take Screenshot Here: Docker container running and app accessible.
+
 <img width="450" alt="docker" src="https://github.com/user-attachments/assets/59e01d94-2362-4ba5-8ed4-7764539d7874" />
 
 <img width="302" alt="dockerapp" src="https://github.com/user-attachments/assets/7e939ba2-62ca-422a-9d78-67a78c9e2eac" />
@@ -215,6 +222,7 @@ SysAdmins often maintain Kubernetes applications, even if they don't write them.
 Learning Moment: Understand Deployments vs. Services.
 
 Take Screenshot Here: kubectl get pods and service status output.
+
 <img width="453" alt="getpods" src="https://github.com/user-attachments/assets/57333126-1ea6-43b4-9ecd-7efa299f3c39" />
 
 
@@ -253,6 +261,7 @@ Prometheus is heavily used in production environments for SRE and DevOps tasks.
 Learning Moment: Configuration management via ConfigMaps.
 
 Take Screenshot Here: Prometheus UI Target screen.
+
 <img width="474" alt="prom" src="https://github.com/user-attachments/assets/b5ba9df2-e240-4130-9a6b-9da84c1a0143" />
 
 
@@ -278,6 +287,7 @@ Dashboards and alerts are critical for maintaining service health.
 Learning Moment: PromQL basics (Prometheus Query Language).
 
 Take Screenshot Here: Grafana Dashboard
+
 <img width="480" alt="grafana" src="https://github.com/user-attachments/assets/06bd75f8-a9a1-4a8b-a683-d49d5a20228a" />
 
 
